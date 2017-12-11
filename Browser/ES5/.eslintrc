@@ -1,0 +1,76 @@
+{
+    "env": {
+        "browser" : true,
+        "mocha"   : true
+    },
+
+    "extends": "eslint:recommended",
+
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+
+    "rules": {
+
+        // General rules
+        "no-console"                  :   "error",
+        "eqeqeq"                      :   "error",
+        "curly"                       :   "error",
+        "comma-dangle"                : [ "error", "never" ],
+
+        // Semicolons
+        "semi"                        : [ "error", "always" ],
+        "semi-spacing"                :   "error",
+      
+        // Spacing & linebreaks
+        "indent"                      : [ "error", 2, {
+            "SwitchCase" : 1
+        }],
+        "no-tabs"                     :   "error",
+        "space-before-blocks"         :   "error",
+        "array-bracket-spacing"       :   "error",
+        "comma-spacing"               :   "error",
+        "object-curly-spacing"        : [ "error", "always" ],
+        "linebreak-style"             : [ "error", "unix" ],
+        "eol-last"                    : [ "error", "always" ],
+        "computed-property-spacing"   : [ "error", "never" ],
+        "space-infix-ops"             :   "error",
+        "switch-colon-spacing"        :   "error",
+        "space-in-parens"             : [ "error", "never" ],
+        "key-spacing" : [ "warn", {
+            "beforeColon" : true,
+            "afterColon"  : true,
+            "align"       : "colon"
+        }],
+        "keyword-spacing" : [ "error", {
+            "before" : true,
+            "after"  : true
+        }],
+        "no-trailing-spaces"          :   "error",
+
+        // Variables
+        "no-undef"                    :   "warn",
+        "no-unused-vars"              :   "warn",
+
+        // Functions
+        "max-params"                  : [ "error", 4 ],
+        "space-before-function-paren" : [ "error", "never" ],
+
+        // Object constructors
+        "new-parens"                  :   "error",
+        "new-cap"                     : [ "warn", {
+            "newIsCap"   : true,
+            "properties" : true
+        }],
+
+        // If-else statements
+        "no-lonely-if"                :   "error",
+
+        // Comments
+        "capitalized-comments"        :   "error",
+        "spaced-comment"              : [ "error", "always" ],
+        "valid-jsdoc"                 :   "warn"
+
+    }
+
+}
