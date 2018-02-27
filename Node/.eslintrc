@@ -25,7 +25,9 @@
     "semi-spacing"                :   "error",
     
     // Spacing & linebreaks
-    "indent"                      : [ "error", 2 ],
+    "indent"                      : [ "error", 2, {
+      "SwitchCase" : 1
+    }],
     "no-tabs"                     :   "error",
     "space-before-blocks"         :   "error",
     "array-bracket-spacing"       :   "warn",
@@ -77,4 +79,3 @@
   }
 
 }
-
